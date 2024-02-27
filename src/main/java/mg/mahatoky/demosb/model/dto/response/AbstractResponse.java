@@ -1,4 +1,4 @@
-package mg.mahatoky.demosb.model.dto;
+package mg.mahatoky.demosb.model.dto.response;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

@@ -1,8 +1,8 @@
 package mg.mahatoky.demosb.controller;
 
-import mg.mahatoky.demosb.model.dto.AbstractResponse;
-import mg.mahatoky.demosb.model.dto.ErrorResponse;
-import mg.mahatoky.demosb.model.dto.SuccessResponse;
+import mg.mahatoky.demosb.model.dto.response.AbstractResponse;
+import mg.mahatoky.demosb.model.dto.response.ErrorResponse;
+import mg.mahatoky.demosb.model.dto.response.SuccessResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
