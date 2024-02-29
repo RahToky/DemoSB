@@ -13,7 +13,7 @@ import java.util.List;
  * @author mtk_ext
  */
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class UserController {
 
     @Autowired
