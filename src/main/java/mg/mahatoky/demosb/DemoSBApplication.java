@@ -1,6 +1,7 @@
 package mg.mahatoky.demosb;
 
 import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,19 +14,9 @@ import org.springframework.scheduling.annotation.Scheduled;
  * @author mtk_ext
  */
 @SpringBootApplication
-@EnableScheduling
 public class DemoSBApplication {
-    @Autowired
-    private JobLauncher jobLauncher;
-    @Autowired
-    private Job saveBannerUsersJob;
 
     public static void main(String[] args) {
         SpringApplication.run(DemoSBApplication.class, args);
-    }
-
-    @Scheduled(cron = "* * * * *")
-    public void launchBannerUserJob() throws Exception {
-        jobLauncher.run(saveBannerUsersJob, new JobParametersBuilder().toJobParameters());
     }
 }
